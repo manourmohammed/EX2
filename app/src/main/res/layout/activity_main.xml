@@ -104,7 +104,7 @@
         android:layout_marginTop="21dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="1dp"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="#D0BB86FC"
         app:layout_constraintBottom_toTopOf="@+id/nomber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/c2"
