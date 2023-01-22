@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,18 +54,24 @@ public class MainActivity extends AppCompatActivity {
                         "\n?*9=?");
             }
         });
+        Toast toast;
+        toast=Toast.makeText(MainActivity.this," vide!!!! ",Toast.LENGTH_SHORT);
         btn_afficher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try{
                     int Number1 = Integer.parseInt(number1.getText().toString());
                     String s="";
                     for (int i=1;i<=10;i++) {
                         int result= Number1*i;
                         s+=String.format(" %d*%d=%d \n",Number1,i,result);
                         //result=0;
-
                     }
                     textview.setText(s);
+        }catch (NumberFormatException e){
+            toast.show();
+            btn_reinitializer.callOnClick();
+        }
             }
 
         });
