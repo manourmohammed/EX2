@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nomber" />
 
     <TextView
-        android:id="@+id/texteView"
+        android:id="@+id/texte1"
         android:layout_width="305dp"
         android:layout_height="380dp"
         android:layout_marginTop="96dp"
